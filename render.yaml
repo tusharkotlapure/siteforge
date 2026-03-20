@@ -1,36 +1,53 @@
 # render.yaml — Render deployment configuration
 # Docs: https://render.com/docs/infrastructure-as-code
 #
-# This deploys SiteForge as a SINGLE web service:
-#   - Render builds the React frontend (npm run build)
-#   - Then starts the Express server which serves both the API
-#     AND the built frontend from client/dist/
+# HOW IT WORKS:
+#   build:  installs client deps → builds React with Vite → installs server deps
+#   start:  Express serves both the API (/api/*) and the built React app (client/dist/)
 #
-# Deploy steps:
-#   1. Push this repo to GitHub
-#   2. Go to https://dashboard.render.com/new
-#   3. Select "Blueprint" and point to this repo
-#   4. Render auto-reads this file and creates the service
+# DEPLOY (Blueprint method — easiest):
+#   1. Push repo to GitHub
+#   2. https://dashboard.render.com → New → Blueprint → select repo → Apply
 #
-# OR manually create a Web Service with:
-#   Build Command: npm run build:prod
+# DEPLOY (Manual method):
+#   New → Web Service → connect repo
+#   Build Command: cd client && npm install && npm run build && cd ../server && npm install
 #   Start Command: npm start
+#   Add env var: NODE_ENV = production
 
 services:
   - type: web
     name: siteforge
     runtime: node
-    plan: free                         # Free tier — spins down after 15min inactivity
-    region: oregon                     # us-west-2 (closest to most users)
+    plan: free
+    region: oregon
     branch: main
-    buildCommand: npm run build:prod
+
+    # Explicit build sequence:
+    #   1. Install client deps (vite lives here)
+    #   2. Build React → outputs to client/dist/
+    #   3. Install server deps
+    buildCommand: cd client && npm install && npm run build && cd ../server && npm install
+
+    # Express starts in production mode → serves client/dist + API
     startCommand: npm start
+
     healthCheckPath: /health
+
     envVars:
       - key: NODE_ENV
         value: production
+
+      # Render sets NODE_VERSION from this:
       - key: NODE_VERSION
-        value: 20.11.0
-      # Optional: Add your Anthropic API key for real AI generation
+        value: "20.11.0"
+
+      # Tell npm NOT to skip devDependencies during the build step.
+      # (Render sets --omit=dev by default; this overrides that for client install)
+      - key: NPM_FLAGS
+        value: ""
+
+      # Optional — add in Render dashboard (never commit real keys):
       # - key: ANTHROPIC_API_KEY
-      #   value: sk-ant-...             # Set this in Render dashboard, not here
+      #   value: sk-ant-...
+

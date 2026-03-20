@@ -66,7 +66,7 @@ git push -u origin main
 | **Region** | Oregon (US West) |
 | **Branch** | main |
 | **Runtime** | Node |
-| **Build Command** | `npm run build:prod` |
+| **Build Command** | `cd client && npm install && npm run build && cd ../server && npm install` |
 | **Start Command** | `npm start` |
 | **Plan** | Free |
 
