@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{seo_title}}</title>
+  <meta name="description" content="{{seo_description}}" />
+  <meta name="theme-color" content="{{theme_color}}" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner container">
+    <a href="index.html" class="nav-logo">{{logo_text}}</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Work</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section class="section" style="padding-top: 8rem;">
+  <div class="container">
+    <div class="about-layout">
+      <div class="about-text">
+        <div class="section-label">About Me</div>
+        <h2>{{bio_heading}}</h2>
+        <p>{{bio_text}}</p>
+        <div class="about-stats">
+          <div class="stat-box">
+            <div class="num">{{years_exp}}</div>
+            <div class="label">Years Exp</div>
+          </div>
+          <div class="stat-box">
+            <div class="num">{{projects_shipped}}</div>
+            <div class="label">Projects</div>
+          </div>
+          <div class="stat-box">
+            <div class="num">{{happy_clients}}</div>
+            <div class="label">Clients</div>
+          </div>
+        </div>
+        <div style="margin-top: 2rem;">
+          <a href="contact.html" class="btn btn-accent">Work With Me →</a>
+        </div>
+      </div>
+      <div>
+        <div class="avatar-block">
+          <div class="avatar">{{logo_text}}</div>
+          <div class="avatar-name">{{site_name}}</div>
+          <div class="avatar-role">{{role_title}}</div>
+          <div class="social-links">
+            <a href="{{github_url}}" class="social-link" target="_blank">GH</a>
+            <a href="{{linkedin_url}}" class="social-link" target="_blank">LI</a>
+            <a href="{{twitter_url}}" class="social-link" target="_blank">TW</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p>© {{current_year}} {{site_name}} · Built with care</p>
+  </div>
+</footer>
+
+<script src="assets/js/script.js"></script>
+</body>
+</html>

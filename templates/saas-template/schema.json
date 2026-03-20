@@ -1,0 +1,64 @@
+{
+  "meta": {
+    "name": "SaaS Product",
+    "description": "A modern, conversion-focused template for software products and startups",
+    "thumbnail": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=80",
+    "tags": ["saas", "startup", "tech", "product"]
+  },
+  "global": {
+    "site_name":     { "type": "text",  "label": "Product Name",      "default": "Flowdesk" },
+    "logo_text":     { "type": "text",  "label": "Logo Text",         "default": "Flowdesk" },
+    "tagline":       { "type": "text",  "label": "Product Tagline",   "default": "Work flows better" },
+    "primary_email": { "type": "email", "label": "Support Email",     "default": "hello@flowdesk.io" },
+    "twitter_url":   { "type": "url",   "label": "Twitter URL",       "default": "https://twitter.com" },
+    "github_url":    { "type": "url",   "label": "GitHub URL",        "default": "https://github.com" },
+    "signup_url":    { "type": "url",   "label": "Sign Up / App URL", "default": "#" }
+  },
+  "pages": {
+    "index": {
+      "title":            { "type": "text",     "label": "Page Title",           "default": "Flowdesk — Work flows better" },
+      "hero_label":       { "type": "text",     "label": "Hero Label (badge)",   "default": "Now in public beta" },
+      "hero_heading":     { "type": "text",     "label": "Hero Heading",         "default": "The workflow tool your team will actually use" },
+      "hero_subheading":  { "type": "textarea", "label": "Hero Subheading",      "default": "Flowdesk brings tasks, docs, and team communication into one beautifully simple workspace. Less switching tabs. More shipping." },
+      "cta_primary":      { "type": "text",     "label": "Primary CTA",          "default": "Start free — no card needed" },
+      "cta_secondary":    { "type": "text",     "label": "Secondary CTA",        "default": "Watch the demo" },
+      "social_proof":     { "type": "text",     "label": "Social Proof Line",    "default": "Trusted by 3,200+ teams at companies like Stripe, Linear, and Vercel" },
+      "feat1_title":      { "type": "text",     "label": "Feature 1 Title",      "default": "Tasks that think ahead" },
+      "feat1_desc":       { "type": "textarea", "label": "Feature 1 Description","default": "Smart tasks auto-assign priorities, surface blockers, and predict completion dates based on your team's velocity." },
+      "feat2_title":      { "type": "text",     "label": "Feature 2 Title",      "default": "Docs that live with your work" },
+      "feat2_desc":       { "type": "textarea", "label": "Feature 2 Description","default": "Write specs, runbooks, and meeting notes right beside the tasks they're about. Context, always in reach." },
+      "feat3_title":      { "type": "text",     "label": "Feature 3 Title",      "default": "Real-time collaboration" },
+      "feat3_desc":       { "type": "textarea", "label": "Feature 3 Description","default": "See your team's cursor. Edit together. Comment inline. No more stale Notion pages and lost Slack threads." },
+      "feat4_title":      { "type": "text",     "label": "Feature 4 Title",      "default": "Analytics built in" },
+      "feat4_desc":       { "type": "textarea", "label": "Feature 4 Description","default": "Sprint velocity, cycle time, and burndown charts are automatically generated. No more manual reporting." },
+      "stat1_num":        { "type": "text",     "label": "Stat 1 Number",        "default": "3,200+" },
+      "stat1_label":      { "type": "text",     "label": "Stat 1 Label",         "default": "Teams using Flowdesk" },
+      "stat2_num":        { "type": "text",     "label": "Stat 2 Number",        "default": "94%" },
+      "stat2_label":      { "type": "text",     "label": "Stat 2 Label",         "default": "Retention after 90 days" },
+      "stat3_num":        { "type": "text",     "label": "Stat 3 Number",        "default": "2.4×" },
+      "stat3_label":      { "type": "text",     "label": "Stat 3 Label",         "default": "Faster shipping cycles" },
+      "testimonial_text": { "type": "textarea", "label": "Testimonial Quote",    "default": "Flowdesk replaced four tools for us. We shipped our last feature in half the time we expected. It's the first productivity tool that actually made us more productive." },
+      "testimonial_name": { "type": "text",     "label": "Testimonial Name",     "default": "Sarah Kim" },
+      "testimonial_role": { "type": "text",     "label": "Testimonial Role",     "default": "VP Engineering, Meridian" }
+    },
+    "pricing": {
+      "title":            { "type": "text",     "label": "Page Title",           "default": "Pricing — Flowdesk" },
+      "pricing_heading":  { "type": "text",     "label": "Pricing Heading",      "default": "Simple, honest pricing" },
+      "pricing_subtext":  { "type": "text",     "label": "Pricing Subtext",      "default": "No per-seat gotchas. No feature walls. Just one price for unlimited teammates." },
+      "plan_free_name":   { "type": "text",     "label": "Free Plan Name",       "default": "Starter" },
+      "plan_free_price":  { "type": "text",     "label": "Free Plan Price",      "default": "$0" },
+      "plan_free_desc":   { "type": "text",     "label": "Free Plan Description","default": "Perfect for small teams and solo builders" },
+      "plan_pro_name":    { "type": "text",     "label": "Pro Plan Name",        "default": "Pro" },
+      "plan_pro_price":   { "type": "text",     "label": "Pro Plan Price",       "default": "$29" },
+      "plan_pro_desc":    { "type": "text",     "label": "Pro Plan Description", "default": "Everything you need to ship faster, together" },
+      "plan_team_name":   { "type": "text",     "label": "Team Plan Name",       "default": "Team" },
+      "plan_team_price":  { "type": "text",     "label": "Team Plan Price",      "default": "$79" },
+      "plan_team_desc":   { "type": "text",     "label": "Team Plan Description","default": "Advanced controls for scaling organisations" }
+    },
+    "contact": {
+      "title":            { "type": "text",     "label": "Page Title",           "default": "Contact — Flowdesk" },
+      "contact_heading":  { "type": "text",     "label": "Contact Heading",      "default": "We're here to help" },
+      "contact_desc":     { "type": "textarea", "label": "Contact Description",  "default": "Have a question, feature request, or just want to say hi? Our team responds within one business day." }
+    }
+  }
+}

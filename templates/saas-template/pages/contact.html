@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{seo_title}}</title>
+  <meta name="theme-color" content="{{theme_color}}" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <style>body{font-family:'Inter',system-ui,sans-serif}</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo"><span class="nav-logo-dot"></span>{{logo_text}}</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Product</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+    <a href="{{signup_url}}" class="btn btn-primary">Get started →</a>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="contact-layout">
+    <div class="contact-info">
+      <div style="font-size:0.8rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--primary);margin-bottom:0.75rem;">Support</div>
+      <h2>{{contact_heading}}</h2>
+      <p>{{contact_desc}}</p>
+
+      <a href="mailto:{{primary_email}}" class="contact-channel">
+        <div class="channel-icon">✉️</div>
+        <div>
+          <div class="channel-label">Email</div>
+          <div class="channel-value">{{primary_email}}</div>
+        </div>
+      </a>
+      <a href="{{twitter_url}}" target="_blank" class="contact-channel">
+        <div class="channel-icon">𝕏</div>
+        <div>
+          <div class="channel-label">Twitter / X</div>
+          <div class="channel-value">DM us anytime</div>
+        </div>
+      </a>
+      <a href="{{github_url}}" target="_blank" class="contact-channel">
+        <div class="channel-icon">⬡</div>
+        <div>
+          <div class="channel-label">GitHub</div>
+          <div class="channel-value">Open an issue or discussion</div>
+        </div>
+      </a>
+    </div>
+
+    <div>
+      <form class="contact-form" id="contact-form">
+        <div class="form-group">
+          <label>Your Name</label>
+          <input type="text" placeholder="Alex Johnson" required />
+        </div>
+        <div class="form-group">
+          <label>Work Email</label>
+          <input type="email" placeholder="alex@company.com" required />
+        </div>
+        <div class="form-group">
+          <label>Topic</label>
+          <select>
+            <option>General enquiry</option>
+            <option>Technical support</option>
+            <option>Billing question</option>
+            <option>Feature request</option>
+            <option>Enterprise / sales</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Message</label>
+          <textarea placeholder="Tell us what's on your mind…" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="align-self:flex-start;">Send message →</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand-name"><span class="nav-logo-dot"></span>{{logo_text}}</div>
+        <p class="footer-tagline">{{tagline}}</p>
+      </div>
+      <div class="footer-col"><h4>Product</h4><ul><li><a href="index.html">Features</a></li><li><a href="pricing.html">Pricing</a></li></ul></div>
+      <div class="footer-col"><h4>Company</h4><ul><li><a href="contact.html">Contact</a></li></ul></div>
+      <div class="footer-col"><h4>Legal</h4><ul><li><a href="#">Privacy</a></li><li><a href="#">Terms</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><span>© {{current_year}} {{site_name}}.</span><span>Made with ♥</span></div>
+  </div>
+</footer>
+
+<script src="assets/js/script.js"></script>
+</body>
+</html>

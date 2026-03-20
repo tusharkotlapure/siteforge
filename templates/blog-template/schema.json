@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "name": "Blog Minimal",
+    "description": "A clean, editorial blog template focused on readability",
+    "thumbnail": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=600&q=80",
+    "tags": ["blog", "editorial", "minimal", "writing"]
+  },
+  "global": {
+    "site_name": { "type": "text", "label": "Blog Name", "default": "The Dispatch", "required": true },
+    "logo_text": { "type": "text", "label": "Logo Text", "default": "The Dispatch" },
+    "tagline": { "type": "text", "label": "Blog Tagline", "default": "Ideas worth reading." },
+    "author_name": { "type": "text", "label": "Author Name", "default": "Jordan Blake" },
+    "author_bio": { "type": "textarea", "label": "Author Bio", "default": "Writer, thinker, and curious human. Covering tech, culture, and ideas that matter." },
+    "primary_email": { "type": "email", "label": "Contact Email", "default": "hello@thedispatch.com" },
+    "twitter_url": { "type": "url", "label": "Twitter URL", "default": "https://twitter.com" },
+    "topics": { "type": "text", "label": "Topic Tags (comma-separated)", "default": "Technology, Culture, Design, Ideas" }
+  },
+  "pages": {
+    "index": {
+      "title": { "type": "text", "label": "Page Title", "default": "The Dispatch — Ideas Worth Reading" },
+      "featured_title": { "type": "text", "label": "Featured Post Title", "default": "The Quiet Revolution Happening in AI-Powered Design Tools" },
+      "featured_excerpt": { "type": "textarea", "label": "Featured Post Excerpt", "default": "Design tools are being reshaped by machine intelligence. Here's what it means for the craft, the profession, and the people who love both." },
+      "featured_category": { "type": "text", "label": "Featured Post Category", "default": "Technology" },
+      "featured_date": { "type": "text", "label": "Featured Post Date", "default": "March 12, 2026" },
+      "post1_title": { "type": "text", "label": "Post 1 Title", "default": "On Writing in the Age of LLMs" },
+      "post1_excerpt": { "type": "text", "label": "Post 1 Excerpt", "default": "What does authorship mean when machines can write? A meditation on craft, voice, and why it still matters." },
+      "post1_category": { "type": "text", "label": "Post 1 Category", "default": "Culture" },
+      "post1_date": { "type": "text", "label": "Post 1 Date", "default": "March 8, 2026" },
+      "post2_title": { "type": "text", "label": "Post 2 Title", "default": "Why Boring Software Wins" },
+      "post2_excerpt": { "type": "text", "label": "Post 2 Excerpt", "default": "Reliability and simplicity beat novelty almost every time. The case for dull, dependable tools." },
+      "post2_category": { "type": "text", "label": "Post 2 Category", "default": "Design" },
+      "post2_date": { "type": "text", "label": "Post 2 Date", "default": "March 2, 2026" },
+      "post3_title": { "type": "text", "label": "Post 3 Title", "default": "The Return of Slow Media" },
+      "post3_excerpt": { "type": "text", "label": "Post 3 Excerpt", "default": "Long-form newsletters, print magazines, and podcasts are thriving. Here's why depth is making a comeback." },
+      "post3_category": { "type": "text", "label": "Post 3 Category", "default": "Ideas" },
+      "post3_date": { "type": "text", "label": "Post 3 Date", "default": "Feb 24, 2026" }
+    },
+    "about": {
+      "title": { "type": "text", "label": "Page Title", "default": "About The Dispatch" },
+      "about_heading": { "type": "text", "label": "About Heading", "default": "Why I Write" },
+      "about_text": { "type": "textarea", "label": "About Text", "default": "The Dispatch started as a personal notebook — a place to think out loud about technology, culture, and the ideas shaping our world. It grew into something bigger: a weekly newsletter read by thousands of people who care about depth over noise.\n\nEvery post is written with care, edited ruthlessly, and published only when it's ready. No filler. No hot takes for clicks. Just honest thinking, clearly expressed." },
+      "newsletter_heading": { "type": "text", "label": "Newsletter Heading", "default": "Join the Reader" },
+      "newsletter_desc": { "type": "text", "label": "Newsletter Description", "default": "One email per week. Thoughtful essays on tech, culture, and ideas. No spam, ever." }
+    },
+    "contact": {
+      "title": { "type": "text", "label": "Page Title", "default": "Contact — The Dispatch" },
+      "contact_heading": { "type": "text", "label": "Contact Heading", "default": "Say Hello" },
+      "contact_desc": { "type": "textarea", "label": "Contact Description", "default": "Whether you want to pitch a collaboration, share feedback, or just say hi — I'd love to hear from you." }
+    }
+  }
+}

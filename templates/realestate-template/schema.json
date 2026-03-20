@@ -1,0 +1,69 @@
+{
+  "meta": {
+    "name": "Real Estate Agency",
+    "description": "A premium, trust-building template for real estate agents and property agencies",
+    "thumbnail": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=600&q=80",
+    "tags": ["realestate", "property", "luxury", "professional"]
+  },
+  "global": {
+    "site_name":      { "type": "text",  "label": "Agency Name",       "default": "Meridian Properties" },
+    "logo_text":      { "type": "text",  "label": "Logo Text",         "default": "Meridian" },
+    "agent_name":     { "type": "text",  "label": "Agent / Team Name", "default": "The Chen Group" },
+    "primary_email":  { "type": "email", "label": "Email",             "default": "hello@meridianprop.com" },
+    "phone":          { "type": "text",  "label": "Phone",             "default": "+1 (310) 555-0177" },
+    "address":        { "type": "text",  "label": "Office Address",    "default": "8840 Wilshire Blvd, Beverly Hills, CA 90211" },
+    "license":        { "type": "text",  "label": "License Number",    "default": "DRE #02078341" },
+    "instagram_url":  { "type": "url",   "label": "Instagram URL",     "default": "https://instagram.com" },
+    "linkedin_url":   { "type": "url",   "label": "LinkedIn URL",      "default": "https://linkedin.com" }
+  },
+  "pages": {
+    "index": {
+      "title":              { "type": "text",     "label": "Page Title",             "default": "Meridian Properties — Beverly Hills Real Estate" },
+      "hero_eyebrow":       { "type": "text",     "label": "Hero Eyebrow",           "default": "Beverly Hills · Bel Air · Malibu" },
+      "hero_heading":       { "type": "text",     "label": "Hero Heading",           "default": "Your next home is waiting" },
+      "hero_subheading":    { "type": "textarea", "label": "Hero Subheading",        "default": "Meridian Properties specialises in luxury residential sales and leasing across Los Angeles' most coveted neighbourhoods. With $2.4B in career sales, we deliver results." },
+      "cta_listings":       { "type": "text",     "label": "Listings CTA",           "default": "Browse Listings" },
+      "cta_contact":        { "type": "text",     "label": "Contact CTA",            "default": "Schedule a Call" },
+      "prop1_address":      { "type": "text",     "label": "Property 1 Address",     "default": "742 Rexford Drive" },
+      "prop1_area":         { "type": "text",     "label": "Property 1 Area",        "default": "Beverly Hills, CA" },
+      "prop1_price":        { "type": "text",     "label": "Property 1 Price",       "default": "$7,250,000" },
+      "prop1_beds":         { "type": "text",     "label": "Property 1 Beds",        "default": "5" },
+      "prop1_baths":        { "type": "text",     "label": "Property 1 Baths",       "default": "6.5" },
+      "prop1_sqft":         { "type": "text",     "label": "Property 1 Sq Ft",       "default": "6,200" },
+      "prop2_address":      { "type": "text",     "label": "Property 2 Address",     "default": "1240 Bel Air Road" },
+      "prop2_area":         { "type": "text",     "label": "Property 2 Area",        "default": "Bel Air, CA" },
+      "prop2_price":        { "type": "text",     "label": "Property 2 Price",       "default": "$11,900,000" },
+      "prop2_beds":         { "type": "text",     "label": "Property 2 Beds",        "default": "7" },
+      "prop2_baths":        { "type": "text",     "label": "Property 2 Baths",       "default": "8" },
+      "prop2_sqft":         { "type": "text",     "label": "Property 2 Sq Ft",       "default": "9,400" },
+      "prop3_address":      { "type": "text",     "label": "Property 3 Address",     "default": "28 Malibu Colony Road" },
+      "prop3_area":         { "type": "text",     "label": "Property 3 Area",        "default": "Malibu, CA" },
+      "prop3_price":        { "type": "text",     "label": "Property 3 Price",       "default": "$14,500,000" },
+      "prop3_beds":         { "type": "text",     "label": "Property 3 Beds",        "default": "6" },
+      "prop3_baths":        { "type": "text",     "label": "Property 3 Baths",       "default": "7" },
+      "prop3_sqft":         { "type": "text",     "label": "Property 3 Sq Ft",       "default": "8,100" },
+      "stat1_num":          { "type": "text",     "label": "Stat 1 Number",          "default": "$2.4B" },
+      "stat1_label":        { "type": "text",     "label": "Stat 1 Label",           "default": "Career sales volume" },
+      "stat2_num":          { "type": "text",     "label": "Stat 2 Number",          "default": "18" },
+      "stat2_label":        { "type": "text",     "label": "Stat 2 Label",           "default": "Years of experience" },
+      "stat3_num":          { "type": "text",     "label": "Stat 3 Number",          "default": "340+" },
+      "stat3_label":        { "type": "text",     "label": "Stat 3 Label",           "default": "Homes sold" }
+    },
+    "about": {
+      "title":              { "type": "text",     "label": "Page Title",             "default": "About — Meridian Properties" },
+      "about_heading":      { "type": "text",     "label": "About Heading",          "default": "Built on trust. Driven by results." },
+      "about_text":         { "type": "textarea", "label": "About Text",             "default": "Meridian Properties was founded on a simple belief: that every client deserves the same level of service we'd want for our own families. Over 18 years, that commitment has translated into over $2.4 billion in sales and hundreds of families finding their perfect home.\n\nWe combine hyper-local market expertise with a global network of buyers and sellers, ensuring your property receives maximum exposure and your purchase is strategically negotiated." },
+      "value1_title":       { "type": "text",     "label": "Value 1 Title",          "default": "Market expertise" },
+      "value1_desc":        { "type": "text",     "label": "Value 1 Description",    "default": "18 years of deep local knowledge across LA's premier neighbourhoods." },
+      "value2_title":       { "type": "text",     "label": "Value 2 Title",          "default": "Proven results" },
+      "value2_desc":        { "type": "text",     "label": "Value 2 Description",    "default": "Consistently ranked in the top 1% of agents in Los Angeles County." },
+      "value3_title":       { "type": "text",     "label": "Value 3 Title",          "default": "White-glove service" },
+      "value3_desc":        { "type": "text",     "label": "Value 3 Description",    "default": "From first showing to closing day, you'll have a dedicated point of contact." }
+    },
+    "contact": {
+      "title":              { "type": "text",     "label": "Page Title",             "default": "Contact — Meridian Properties" },
+      "contact_heading":    { "type": "text",     "label": "Contact Heading",        "default": "Let's find your home" },
+      "contact_desc":       { "type": "textarea", "label": "Contact Description",    "default": "Whether you're buying, selling, or just exploring the market — we'd love to connect. Fill in the form and we'll be in touch within 24 hours." }
+    }
+  }
+}

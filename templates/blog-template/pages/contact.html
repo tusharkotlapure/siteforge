@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{seo_title}}</title>
+  <meta name="description" content="{{seo_description}}" />
+  <meta name="theme-color" content="{{theme_color}}" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+<header>
+  <div class="header-top">
+    <div>
+      <a href="index.html" class="site-logo">{{logo_text}}</a>
+      <div class="site-tagline">{{tagline}}</div>
+    </div>
+  </div>
+  <ul class="header-nav">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html" class="active">Contact</a></li>
+  </ul>
+</header>
+
+<div class="contact-page">
+  <h1>{{contact_heading}}</h1>
+  <p class="lead">{{contact_desc}}</p>
+  <p style="margin-bottom:2rem;font-size:0.9rem;color:var(--gray);">Or email directly: <a href="mailto:{{primary_email}}" style="color:var(--accent);font-weight:600;">{{primary_email}}</a></p>
+
+  <form class="contact-form" id="contact-form">
+    <div class="form-group">
+      <label>Your Name</label>
+      <input type="text" placeholder="Jane Smith" required />
+    </div>
+    <div class="form-group">
+      <label>Email Address</label>
+      <input type="email" placeholder="jane@example.com" required />
+    </div>
+    <div class="form-group">
+      <label>Subject</label>
+      <input type="text" placeholder="What's this about?" />
+    </div>
+    <div class="form-group">
+      <label>Message</label>
+      <textarea placeholder="Your message..."></textarea>
+    </div>
+    <button type="submit" class="btn-send">Send Message →</button>
+  </form>
+</div>
+
+<footer>
+  <div class="container">
+    <div class="footer-logo">{{logo_text}}</div>
+    <p>© {{current_year}} {{site_name}} · {{tagline}}</p>
+  </div>
+</footer>
+
+<script src="assets/js/script.js"></script>
+</body>
+</html>

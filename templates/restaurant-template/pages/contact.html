@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{seo_title}}</title>
+  <meta name="description" content="{{seo_description}}" />
+  <meta name="theme-color" content="{{theme_color}}" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Jost:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">{{logo_text}}</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+      <li><a href="{{reservation_url}}" target="_blank" class="nav-reserve">Reserve</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="contact-hero">
+  <div class="section-eyebrow">Come visit us</div>
+  <h1>{{contact_heading}}</h1>
+  <p style="max-width:520px;margin:1rem auto 0;color:var(--gray);">{{contact_subheading}}</p>
+</div>
+
+<div class="container">
+  <div class="contact-grid">
+
+    <div>
+      <h3 style="font-family:var(--font-serif);font-size:1.8rem;margin-bottom:2rem;">Information</h3>
+
+      <div class="info-row">
+        <div class="info-icon">📍</div>
+        <div>
+          <div class="info-label">Address</div>
+          <div class="info-value">{{address}}</div>
+        </div>
+      </div>
+
+      <div class="info-row">
+        <div class="info-icon">📞</div>
+        <div>
+          <div class="info-label">Phone</div>
+          <div class="info-value"><a href="tel:{{phone}}">{{phone}}</a></div>
+        </div>
+      </div>
+
+      <div class="info-row">
+        <div class="info-icon">✉️</div>
+        <div>
+          <div class="info-label">Email</div>
+          <div class="info-value"><a href="mailto:{{primary_email}}">{{primary_email}}</a></div>
+        </div>
+      </div>
+
+      <div class="info-row">
+        <div class="info-icon">🕐</div>
+        <div>
+          <div class="info-label">Hours</div>
+          <div class="hours-grid">
+            <span class="hours-day">Mon–Fri</span>
+            <span>{{hours_weekday}}</span>
+            <span class="hours-day">Sat–Sun</span>
+            <span>{{hours_weekend}}</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="private-block">
+        <h3>{{private_heading}}</h3>
+        <p>{{private_desc}}</p>
+        <a href="mailto:{{primary_email}}" class="btn btn-primary" style="display:inline-flex;">Enquire Now</a>
+      </div>
+    </div>
+
+    <div>
+      <h3 style="font-family:var(--font-serif);font-size:1.8rem;margin-bottom:2rem;">Make a Reservation</h3>
+      <form class="reservation-form" id="reservation-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label>First Name</label>
+            <input type="text" placeholder="Jane" required />
+          </div>
+          <div class="form-group">
+            <label>Last Name</label>
+            <input type="text" placeholder="Smith" required />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" placeholder="jane@example.com" required />
+          </div>
+          <div class="form-group">
+            <label>Phone</label>
+            <input type="tel" placeholder="+1 (555) 000-0000" />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Date</label>
+            <input type="date" required />
+          </div>
+          <div class="form-group">
+            <label>Time</label>
+            <select>
+              <option>18:00</option><option>18:30</option>
+              <option>19:00</option><option>19:30</option>
+              <option>20:00</option><option>20:30</option>
+              <option>21:00</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Party Size</label>
+          <select>
+            <option>1 person</option><option>2 people</option>
+            <option>3 people</option><option>4 people</option>
+            <option>5–6 people</option><option>7+ people</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Special Requests</label>
+          <textarea placeholder="Dietary requirements, special occasions, seating preferences..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-dark" style="align-self:flex-start;">Request Reservation</button>
+      </form>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div>
+        <a href="index.html" class="footer-logo">{{logo_text}}</a>
+        <p class="footer-tagline">{{tagline}}</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Visit</h4>
+        <ul>
+          <li><a href="tel:{{phone}}">{{phone}}</a></li>
+          <li style="color:rgba(255,255,255,0.4);font-size:0.85rem;">{{address}}</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom"><p>© {{current_year}} {{site_name}}.</p></div>
+  </div>
+</footer>
+
+<script src="assets/js/script.js"></script>
+</body>
+</html>

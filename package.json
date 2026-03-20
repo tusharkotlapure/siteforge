@@ -1,0 +1,21 @@
+{
+  "name": "siteforge",
+  "version": "2.1.0",
+  "private": true,
+  "description": "Production-grade static site generator with AI content, drag-and-drop builder, and multi-platform deploy",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "dev": "concurrently -n client,server -c cyan,magenta \"npm run dev:client\" \"npm run dev:server\"",
+    "dev:client": "cd client && npm run dev",
+    "dev:server": "cd server && npm run dev",
+    "install:all": "npm install && cd client && npm install && cd ../server && npm install",
+    "build": "cd client && npm run build",
+    "build:prod": "npm install && cd client && npm install && npm run build && cd ../server && npm install",
+    "start": "NODE_ENV=production node server/src/index.js"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

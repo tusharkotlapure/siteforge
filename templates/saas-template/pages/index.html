@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{seo_title}}</title>
+  <meta name="description" content="{{seo_description}}" />
+  <meta name="keywords" content="{{seo_keywords}}" />
+  <meta name="author" content="{{seo_author}}" />
+  <meta name="theme-color" content="{{theme_color}}" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <style>body{font-family:'Inter',system-ui,sans-serif}</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <span class="nav-logo-dot"></span>{{logo_text}}
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Product</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div style="display:flex;gap:0.75rem;align-items:center;">
+      <a href="{{signup_url}}" class="btn btn-ghost">Log in</a>
+      <a href="{{signup_url}}" class="btn btn-primary">Get started →</a>
+    </div>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="container">
+    <div class="hero-badge">
+      <span class="hero-badge-dot"></span>
+      {{hero_label}}
+    </div>
+    <h1>{{hero_heading}}</h1>
+    <p class="hero-sub">{{hero_subheading}}</p>
+    <div class="hero-actions">
+      <a href="{{signup_url}}" class="btn btn-primary btn-lg">{{cta_primary}}</a>
+      <a href="#features" class="btn btn-outline btn-lg">{{cta_secondary}}</a>
+    </div>
+    <p class="social-proof">{{social_proof}}</p>
+  </div>
+</section>
+
+<section class="section" id="features">
+  <div class="container">
+    <div style="text-align:center;max-width:600px;margin:0 auto 3.5rem;">
+      <div style="font-size:0.8rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--primary);margin-bottom:0.75rem;">Everything in one place</div>
+      <h2>Built for how your team actually works</h2>
+    </div>
+    <div class="features-grid">
+      <div class="feat-card">
+        <div class="feat-icon">⚡</div>
+        <h3>{{feat1_title}}</h3>
+        <p>{{feat1_desc}}</p>
+      </div>
+      <div class="feat-card">
+        <div class="feat-icon">📝</div>
+        <h3>{{feat2_title}}</h3>
+        <p>{{feat2_desc}}</p>
+      </div>
+      <div class="feat-card">
+        <div class="feat-icon">👥</div>
+        <h3>{{feat3_title}}</h3>
+        <p>{{feat3_desc}}</p>
+      </div>
+      <div class="feat-card">
+        <div class="feat-icon">📊</div>
+        <h3>{{feat4_title}}</h3>
+        <p>{{feat4_desc}}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="stats-section">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-item">
+        <div class="stat-num">{{stat1_num}}</div>
+        <div class="stat-label">{{stat1_label}}</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">{{stat2_num}}</div>
+        <div class="stat-label">{{stat2_label}}</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">{{stat3_num}}</div>
+        <div class="stat-label">{{stat3_label}}</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="testimonial-section">
+  <div class="container">
+    <div class="testimonial-card">
+      <div class="testimonial-stars">★★★★★</div>
+      <p class="testimonial-quote">"{{testimonial_text}}"</p>
+      <div class="testimonial-author">
+        <div class="testimonial-avatar">{{testimonial_name.[0]}}</div>
+        <div>
+          <div class="testimonial-name">{{testimonial_name}}</div>
+          <div class="testimonial-role">{{testimonial_role}}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background:var(--bg2);text-align:center;">
+  <div class="container">
+    <h2 style="margin-bottom:1rem;">Ready to move faster?</h2>
+    <p style="color:var(--gray);max-width:480px;margin:0 auto 2rem;">Join thousands of teams who ship more with less friction.</p>
+    <a href="{{signup_url}}" class="btn btn-primary btn-lg">{{cta_primary}}</a>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand-name"><span class="nav-logo-dot"></span>{{logo_text}}</div>
+        <p class="footer-tagline">{{tagline}}</p>
+      </div>
+      <div class="footer-col">
+        <h4>Product</h4>
+        <ul>
+          <li><a href="index.html">Features</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="{{signup_url}}">Sign Up</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="{{twitter_url}}" target="_blank">Twitter</a></li>
+          <li><a href="{{github_url}}" target="_blank">GitHub</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Terms</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© {{current_year}} {{site_name}}. All rights reserved.</span>
+      <span>Made with ♥</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{seo_title}}</title>
+  <meta name="description" content="{{seo_description}}" />
+  <meta name="keywords" content="{{seo_keywords}}" />
+  <meta name="author" content="{{seo_author}}" />
+  <meta property="og:title" content="{{seo_title}}" />
+  <meta property="og:description" content="{{seo_description}}" />
+  <meta name="theme-color" content="{{theme_color}}" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">{{logo_text}}</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html" class="nav-cta">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-badge">⚡ Trusted by 500+ companies worldwide</div>
+      <h1>{{hero_title}} <span>.</span></h1>
+      <p class="hero-desc">{{hero_description}}</p>
+      <div class="hero-actions">
+        <a href="contact.html" class="btn btn-primary">{{cta_primary}} →</a>
+        <a href="about.html" class="btn btn-outline">{{cta_secondary}}</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <div class="stat-num">{{stats_clients}}</div>
+          <div class="stat-label">Happy Clients</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">{{stats_projects}}</div>
+          <div class="stat-label">Projects Done</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">{{stats_years}}</div>
+          <div class="stat-label">Years Experience</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section services">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">What We Do</div>
+      <h2>Services Built for Growth</h2>
+      <p>Everything your business needs to compete and win in today's market.</p>
+    </div>
+    <div class="grid-3">
+      <div class="card">
+        <div class="card-icon">💡</div>
+        <h3>{{service1_title}}</h3>
+        <p>{{service1_desc}}</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">⚙️</div>
+        <h3>{{service2_title}}</h3>
+        <p>{{service2_desc}}</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">📊</div>
+        <h3>{{service3_title}}</h3>
+        <p>{{service3_desc}}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="cta-banner">
+  <div class="container">
+    <h2>Ready to grow your business?</h2>
+    <p>Join hundreds of companies already working with {{site_name}}.</p>
+    <a href="contact.html" class="btn btn-white">Start the Conversation →</a>
+  </div>
+</div>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <span class="nav-logo">{{logo_text}}</span>
+        <p>{{footer_tagline}}</p>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:{{primary_email}}">{{primary_email}}</a></li>
+          <li><a href="tel:{{phone}}">{{phone}}</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© {{current_year}} {{site_name}}. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/script.js"></script>
+</body>
+</html>

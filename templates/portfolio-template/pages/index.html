@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{seo_title}}</title>
+  <meta name="description" content="{{seo_description}}" />
+  <meta name="theme-color" content="{{theme_color}}" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner container">
+    <span class="nav-logo">{{logo_text}}</span>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Work</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="container">
+    <span class="hero-tag">// {{role_title}}</span>
+    <h1>{{hero_greeting}}<br/><span class="name">{{site_name}}</span></h1>
+    <p class="hero-desc">{{hero_description}}</p>
+    <div class="hero-actions">
+      <a href="#projects" class="btn btn-accent">{{cta_work}} ↓</a>
+      <a href="contact.html" class="btn btn-ghost">{{cta_contact}}</a>
+    </div>
+    <div class="skills-row">
+      <span class="skill-tag">{{skill1}}</span>
+      <span class="skill-tag">{{skill2}}</span>
+      <span class="skill-tag">{{skill3}}</span>
+      <span class="skill-tag">{{skill4}}</span>
+      <span class="skill-tag">{{skill5}}</span>
+      <span class="skill-tag">{{skill6}}</span>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="projects">
+  <div class="container">
+    <div class="section-label">Selected Work</div>
+    <div class="projects-grid">
+      <div class="project-card">
+        <div class="project-num">01.</div>
+        <span class="project-arrow">↗</span>
+        <h3>{{project1_title}}</h3>
+        <p>{{project1_desc}}</p>
+        <div class="project-tech">{{project1_tech}}</div>
+      </div>
+      <div class="project-card">
+        <div class="project-num">02.</div>
+        <span class="project-arrow">↗</span>
+        <h3>{{project2_title}}</h3>
+        <p>{{project2_desc}}</p>
+        <div class="project-tech">{{project2_tech}}</div>
+      </div>
+      <div class="project-card">
+        <div class="project-num">03.</div>
+        <span class="project-arrow">↗</span>
+        <h3>{{project3_title}}</h3>
+        <p>{{project3_desc}}</p>
+        <div class="project-tech">{{project3_tech}}</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p>© {{current_year}} {{site_name}} · Built with care</p>
+  </div>
+</footer>
+
+<script src="assets/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{seo_title}}</title>
+  <meta name="description" content="{{seo_description}}" />
+  <meta name="theme-color" content="{{theme_color}}" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+<header>
+  <div class="header-top">
+    <div>
+      <a href="index.html" class="site-logo">{{logo_text}}</a>
+      <div class="site-tagline">{{tagline}}</div>
+    </div>
+  </div>
+  <ul class="header-nav">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html" class="active">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</header>
+
+<div class="about-prose">
+  <h1>{{about_heading}}</h1>
+  <p>{{about_text}}</p>
+
+  <div class="author-card">
+    <div class="author-avatar">{{author_name.[0]}}</div>
+    <div class="author-info">
+      <h3>{{author_name}}</h3>
+      <p>{{author_bio}}</p>
+      <a href="{{twitter_url}}" target="_blank" style="font-size:0.82rem;color:var(--accent);font-weight:600;margin-top:0.5rem;display:inline-block;">@{{site_name}} on Twitter →</a>
+    </div>
+  </div>
+
+  <div class="newsletter-block">
+    <h3>{{newsletter_heading}}</h3>
+    <p>{{newsletter_desc}}</p>
+    <div class="newsletter-inline">
+      <input type="email" placeholder="your@email.com" />
+      <button>Subscribe Free →</button>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="container">
+    <div class="footer-logo">{{logo_text}}</div>
+    <p>© {{current_year}} {{site_name}} · {{tagline}}</p>
+  </div>
+</footer>
+
+<script src="assets/js/script.js"></script>
+</body>
+</html>

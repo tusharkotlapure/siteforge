@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{seo_title}}</title>
+  <meta name="description" content="{{seo_description}}" />
+  <meta name="theme-color" content="{{theme_color}}" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Jost:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">{{logo_text}}</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html" class="active">Menu</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="{{reservation_url}}" target="_blank" class="nav-reserve">Reserve</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="menu-hero">
+  <div class="section-eyebrow" style="color:var(--primary-light);">Seasonal Menu</div>
+  <h1>Our Menu</h1>
+  <p>{{menu_intro}}</p>
+</div>
+
+<div class="container">
+  <div class="menu-section">
+    <div class="menu-section-title">Antipasti</div>
+    <div class="menu-item">
+      <div>
+        <div class="menu-item-name">{{starter1_name}}</div>
+        <div class="menu-item-desc">{{starter1_desc}}</div>
+      </div>
+      <div class="menu-item-price">{{starter1_price}}</div>
+    </div>
+    <div class="menu-item">
+      <div>
+        <div class="menu-item-name">{{starter2_name}}</div>
+        <div class="menu-item-desc">{{starter2_desc}}</div>
+      </div>
+      <div class="menu-item-price">{{starter2_price}}</div>
+    </div>
+  </div>
+
+  <div class="menu-section">
+    <div class="menu-section-title">Secondi</div>
+    <div class="menu-item">
+      <div>
+        <div class="menu-item-name">{{main1_name}}</div>
+        <div class="menu-item-desc">{{main1_desc}}</div>
+      </div>
+      <div class="menu-item-price">{{main1_price}}</div>
+    </div>
+    <div class="menu-item">
+      <div>
+        <div class="menu-item-name">{{main2_name}}</div>
+        <div class="menu-item-desc">{{main2_desc}}</div>
+      </div>
+      <div class="menu-item-price">{{main2_price}}</div>
+    </div>
+  </div>
+
+  <div class="menu-section">
+    <div class="menu-section-title">Dolci</div>
+    <div class="menu-item">
+      <div>
+        <div class="menu-item-name">{{dessert1_name}}</div>
+        <div class="menu-item-desc">{{dessert1_desc}}</div>
+      </div>
+      <div class="menu-item-price">{{dessert1_price}}</div>
+    </div>
+  </div>
+
+  <div style="text-align:center;padding:3rem 0;">
+    <p style="font-family:var(--font-serif);font-style:italic;color:var(--gray);margin-bottom:1.5rem;">
+      Please inform your server of any dietary requirements or allergies.
+    </p>
+    <a href="{{reservation_url}}" target="_blank" class="btn btn-primary">Reserve Your Table</a>
+  </div>
+</div>
+
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div>
+        <a href="index.html" class="footer-logo">{{logo_text}}</a>
+        <p class="footer-tagline">{{tagline}}</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Visit</h4>
+        <ul>
+          <li><a href="tel:{{phone}}">{{phone}}</a></li>
+          <li style="color:rgba(255,255,255,0.4);font-size:0.85rem;">{{address}}</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© {{current_year}} {{site_name}}.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/script.js"></script>
+</body>
+</html>

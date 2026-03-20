@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{seo_title}}</title>
+  <meta name="description" content="{{seo_description}}" />
+  <meta name="keywords" content="{{seo_keywords}}" />
+  <meta name="author" content="{{seo_author}}" />
+  <meta name="theme-color" content="{{theme_color}}" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+<header>
+  <div class="header-top">
+    <div>
+      <a href="index.html" class="site-logo">{{logo_text}}</a>
+      <div class="site-tagline">{{tagline}}</div>
+    </div>
+    <div>
+      <a href="about.html" style="font-size:0.85rem;color:var(--gray);margin-right:1.5rem;">About</a>
+      <a href="contact.html" style="font-size:0.85rem;font-weight:700;color:var(--dark);padding:0.5rem 1rem;background:var(--dark);color:white;">Subscribe</a>
+    </div>
+  </div>
+  <ul class="header-nav">
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</header>
+
+<!-- Featured Post -->
+<div class="featured-post">
+  <div class="featured-inner">
+    <div>
+      <span class="featured-label">Featured</span>
+      <span class="category">{{featured_category}}</span>
+      <h1><a href="#">{{featured_title}}</a></h1>
+      <p class="featured-excerpt">{{featured_excerpt}}</p>
+      <div style="display:flex;align-items:center;gap:1.5rem;">
+        <a href="#" class="read-more">Read Essay →</a>
+        <span class="post-meta">{{featured_date}} · by {{author_name}}</span>
+      </div>
+    </div>
+    <div class="featured-image">✍️</div>
+  </div>
+</div>
+
+<!-- Posts + Sidebar -->
+<div class="container">
+  <div class="content-sidebar">
+    <main>
+      <div class="posts-header">
+        <h2>Latest Posts</h2>
+        <span class="post-meta">{{author_name}}</span>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:2.5rem;">
+
+        <article style="display:grid;grid-template-columns:auto 1fr;gap:1.5rem;padding-bottom:2.5rem;border-bottom:1px solid var(--border);">
+          <div style="min-width:56px;text-align:center;padding-top:4px;">
+            <span class="category">{{post1_category}}</span>
+          </div>
+          <div>
+            <h3 style="margin-bottom:0.4rem;"><a href="#">{{post1_title}}</a></h3>
+            <p style="color:var(--gray);font-size:0.95rem;margin-bottom:0.6rem;">{{post1_excerpt}}</p>
+            <span class="post-meta">{{post1_date}}</span>
+          </div>
+        </article>
+
+        <article style="display:grid;grid-template-columns:auto 1fr;gap:1.5rem;padding-bottom:2.5rem;border-bottom:1px solid var(--border);">
+          <div style="min-width:56px;text-align:center;padding-top:4px;">
+            <span class="category">{{post2_category}}</span>
+          </div>
+          <div>
+            <h3 style="margin-bottom:0.4rem;"><a href="#">{{post2_title}}</a></h3>
+            <p style="color:var(--gray);font-size:0.95rem;margin-bottom:0.6rem;">{{post2_excerpt}}</p>
+            <span class="post-meta">{{post2_date}}</span>
+          </div>
+        </article>
+
+        <article style="display:grid;grid-template-columns:auto 1fr;gap:1.5rem;padding-bottom:2.5rem;border-bottom:1px solid var(--border);">
+          <div style="min-width:56px;text-align:center;padding-top:4px;">
+            <span class="category">{{post3_category}}</span>
+          </div>
+          <div>
+            <h3 style="margin-bottom:0.4rem;"><a href="#">{{post3_title}}</a></h3>
+            <p style="color:var(--gray);font-size:0.95rem;margin-bottom:0.6rem;">{{post3_excerpt}}</p>
+            <span class="post-meta">{{post3_date}}</span>
+          </div>
+        </article>
+
+      </div>
+    </main>
+
+    <aside class="sidebar">
+      <div class="sidebar-widget">
+        <h4>About</h4>
+        <p style="font-size:0.9rem;color:var(--gray);line-height:1.7;margin-bottom:1rem;">{{author_bio}}</p>
+        <a href="about.html" class="read-more" style="font-size:0.82rem;">Read more →</a>
+      </div>
+      <div class="sidebar-widget">
+        <h4>Newsletter</h4>
+        <p style="font-size:0.85rem;color:var(--gray);margin-bottom:1rem;">One essay per week. No spam.</p>
+        <div class="newsletter-form">
+          <input type="email" placeholder="your@email.com" />
+          <button class="btn-subscribe">Subscribe Free →</button>
+        </div>
+      </div>
+      <div class="sidebar-widget">
+        <h4>Topics</h4>
+        <div class="topic-list">
+          <span class="topic-tag">Technology</span>
+          <span class="topic-tag">Culture</span>
+          <span class="topic-tag">Design</span>
+          <span class="topic-tag">Ideas</span>
+          <span class="topic-tag">Writing</span>
+        </div>
+      </div>
+    </aside>
+  </div>
+</div>
+
+<footer>
+  <div class="container">
+    <div class="footer-logo">{{logo_text}}</div>
+    <p>© {{current_year}} {{site_name}} · {{tagline}}</p>
+  </div>
+</footer>
+
+<script src="assets/js/script.js"></script>
+</body>
+</html>

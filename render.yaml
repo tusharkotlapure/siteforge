@@ -1,0 +1,36 @@
+# render.yaml — Render deployment configuration
+# Docs: https://render.com/docs/infrastructure-as-code
+#
+# This deploys SiteForge as a SINGLE web service:
+#   - Render builds the React frontend (npm run build)
+#   - Then starts the Express server which serves both the API
+#     AND the built frontend from client/dist/
+#
+# Deploy steps:
+#   1. Push this repo to GitHub
+#   2. Go to https://dashboard.render.com/new
+#   3. Select "Blueprint" and point to this repo
+#   4. Render auto-reads this file and creates the service
+#
+# OR manually create a Web Service with:
+#   Build Command: npm run build:prod
+#   Start Command: npm start
+
+services:
+  - type: web
+    name: siteforge
+    runtime: node
+    plan: free                         # Free tier — spins down after 15min inactivity
+    region: oregon                     # us-west-2 (closest to most users)
+    branch: main
+    buildCommand: npm run build:prod
+    startCommand: npm start
+    healthCheckPath: /health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: NODE_VERSION
+        value: 20.11.0
+      # Optional: Add your Anthropic API key for real AI generation
+      # - key: ANTHROPIC_API_KEY
+      #   value: sk-ant-...             # Set this in Render dashboard, not here

@@ -1,0 +1,54 @@
+{
+  "meta": {
+    "name": "Portfolio Creative",
+    "description": "A bold, dark portfolio template for creatives and developers",
+    "thumbnail": "https://images.unsplash.com/photo-1545665277-5937489579f2?w=600&q=80",
+    "tags": ["portfolio", "creative", "developer", "dark"]
+  },
+  "global": {
+    "site_name": { "type": "text", "label": "Your Name", "default": "Alex Rivera", "required": true },
+    "logo_text": { "type": "text", "label": "Logo / Initials", "default": "AR" },
+    "role_title": { "type": "text", "label": "Your Role/Title", "default": "Full-Stack Developer & Designer" },
+    "primary_email": { "type": "email", "label": "Email", "default": "alex@portfolio.dev" },
+    "github_url": { "type": "url", "label": "GitHub URL", "default": "https://github.com" },
+    "linkedin_url": { "type": "url", "label": "LinkedIn URL", "default": "https://linkedin.com" },
+    "twitter_url": { "type": "url", "label": "Twitter/X URL", "default": "https://twitter.com" }
+  },
+  "pages": {
+    "index": {
+      "title": { "type": "text", "label": "Page Title", "default": "Alex Rivera — Developer & Designer" },
+      "hero_greeting": { "type": "text", "label": "Greeting Text", "default": "Hi, I'm" },
+      "hero_description": { "type": "textarea", "label": "Hero Description", "default": "I craft high-performance web experiences and intuitive interfaces that users love. Specializing in React, Node.js, and modern UI/UX." },
+      "cta_work": { "type": "text", "label": "View Work Button", "default": "View My Work" },
+      "cta_contact": { "type": "text", "label": "Contact Button", "default": "Get In Touch" },
+      "project1_title": { "type": "text", "label": "Project 1 Name", "default": "E-Commerce Platform" },
+      "project1_desc": { "type": "textarea", "label": "Project 1 Description", "default": "A full-featured e-commerce solution with real-time inventory and payments." },
+      "project1_tech": { "type": "text", "label": "Project 1 Tech Stack", "default": "React · Node · PostgreSQL" },
+      "project2_title": { "type": "text", "label": "Project 2 Name", "default": "AI Dashboard" },
+      "project2_desc": { "type": "textarea", "label": "Project 2 Description", "default": "Analytics dashboard with ML-powered insights and real-time visualizations." },
+      "project2_tech": { "type": "text", "label": "Project 2 Tech Stack", "default": "Vue · Python · TensorFlow" },
+      "project3_title": { "type": "text", "label": "Project 3 Name", "default": "Design System" },
+      "project3_desc": { "type": "textarea", "label": "Project 3 Description", "default": "Comprehensive component library serving 20+ product teams." },
+      "project3_tech": { "type": "text", "label": "Project 3 Tech Stack", "default": "Figma · Storybook · TypeScript" },
+      "skill1": { "type": "text", "label": "Skill 1", "default": "React / Next.js" },
+      "skill2": { "type": "text", "label": "Skill 2", "default": "TypeScript" },
+      "skill3": { "type": "text", "label": "Skill 3", "default": "Node.js" },
+      "skill4": { "type": "text", "label": "Skill 4", "default": "UI/UX Design" },
+      "skill5": { "type": "text", "label": "Skill 5", "default": "PostgreSQL" },
+      "skill6": { "type": "text", "label": "Skill 6", "default": "DevOps / CI/CD" }
+    },
+    "about": {
+      "title": { "type": "text", "label": "Page Title", "default": "About — Alex Rivera" },
+      "bio_heading": { "type": "text", "label": "Bio Heading", "default": "About Me" },
+      "bio_text": { "type": "textarea", "label": "Bio Text", "default": "I'm a self-taught developer with 7 years of experience building web products. I love the intersection of technology and design — creating things that are not just functional, but beautiful. When I'm not coding, I'm hiking, sketching UI concepts, or brewing specialty coffee." },
+      "years_exp": { "type": "text", "label": "Years Experience", "default": "7" },
+      "projects_shipped": { "type": "text", "label": "Projects Shipped", "default": "42" },
+      "happy_clients": { "type": "text", "label": "Happy Clients", "default": "28" }
+    },
+    "contact": {
+      "title": { "type": "text", "label": "Page Title", "default": "Contact — Alex Rivera" },
+      "contact_heading": { "type": "text", "label": "Contact Heading", "default": "Let's Build Something" },
+      "contact_desc": { "type": "textarea", "label": "Contact Description", "default": "Available for freelance projects, full-time roles, and interesting collaborations. Let's talk." }
+    }
+  }
+}

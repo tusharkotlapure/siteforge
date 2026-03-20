@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{seo_title}}</title>
+  <meta name="description" content="{{seo_description}}" />
+  <meta name="theme-color" content="{{theme_color}}" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">{{logo_text}}</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="contact.html" class="nav-cta">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="page-hero">
+  <div class="container">
+    <div class="section-label">Who We Are</div>
+    <h1>{{page_heading}}</h1>
+    <p>We're a passionate team of problem-solvers, builders, and innovators.</p>
+  </div>
+</div>
+
+<section class="section">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-feature">
+        <h3>{{mission_title}}</h3>
+        <p>{{mission_text}}</p>
+      </div>
+      <div class="about-feature">
+        <h3>{{vision_title}}</h3>
+        <p>{{vision_text}}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background: var(--light); padding: 5rem 0;">
+  <div class="container">
+    <div class="section-header" style="text-align:center;">
+      <div class="section-label">Our People</div>
+      <h2>Meet the Team</h2>
+      <p>Passionate experts dedicated to your success.</p>
+    </div>
+    <div class="team-grid">
+      <div class="team-card">
+        <div class="team-avatar">{{team_member1_name.[0]}}</div>
+        <h3>{{team_member1_name}}</h3>
+        <span>{{team_member1_role}}</span>
+      </div>
+      <div class="team-card">
+        <div class="team-avatar">{{team_member2_name.[0]}}</div>
+        <h3>{{team_member2_name}}</h3>
+        <span>{{team_member2_role}}</span>
+      </div>
+      <div class="team-card">
+        <div class="team-avatar">{{team_member3_name.[0]}}</div>
+        <h3>{{team_member3_name}}</h3>
+        <span>{{team_member3_role}}</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <span class="nav-logo">{{logo_text}}</span>
+        <p>{{footer_tagline}}</p>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:{{primary_email}}">{{primary_email}}</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© {{current_year}} {{site_name}}. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/script.js"></script>
+</body>
+</html>

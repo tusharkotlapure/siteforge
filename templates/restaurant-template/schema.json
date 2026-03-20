@@ -1,0 +1,69 @@
+{
+  "meta": {
+    "name": "Restaurant & Dining",
+    "description": "A warm, elegant template for restaurants, cafes, and food businesses",
+    "thumbnail": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&q=80",
+    "tags": ["restaurant", "food", "hospitality", "elegant"]
+  },
+  "global": {
+    "site_name":      { "type": "text",  "label": "Restaurant Name",    "default": "Osteria Bella" },
+    "logo_text":      { "type": "text",  "label": "Logo Text",          "default": "Osteria Bella" },
+    "tagline":        { "type": "text",  "label": "Tagline",            "default": "Farm to table, heart to plate" },
+    "primary_email":  { "type": "email", "label": "Email",              "default": "hello@osteriabella.com" },
+    "phone":          { "type": "text",  "label": "Phone",              "default": "+1 (212) 555-0192" },
+    "address":        { "type": "text",  "label": "Address",            "default": "42 Mulberry St, New York, NY 10013" },
+    "hours_weekday":  { "type": "text",  "label": "Weekday Hours",      "default": "Mon–Fri  12:00 – 22:00" },
+    "hours_weekend":  { "type": "text",  "label": "Weekend Hours",      "default": "Sat–Sun  11:00 – 23:00" },
+    "instagram_url":  { "type": "url",   "label": "Instagram URL",      "default": "https://instagram.com" },
+    "reservation_url":{ "type": "url",   "label": "Reservation Link",   "default": "https://opentable.com" }
+  },
+  "pages": {
+    "index": {
+      "title":              { "type": "text",     "label": "Page Title",         "default": "Osteria Bella — Farm to table dining" },
+      "hero_eyebrow":       { "type": "text",     "label": "Hero Eyebrow",       "default": "Est. 2019 · New York City" },
+      "hero_heading":       { "type": "text",     "label": "Hero Heading",       "default": "Where every meal tells a story" },
+      "hero_subheading":    { "type": "textarea", "label": "Hero Subheading",    "default": "Seasonal ingredients sourced from local farms, prepared with love and served in a setting that feels like home." },
+      "cta_reserve":        { "type": "text",     "label": "Reserve CTA",        "default": "Reserve a Table" },
+      "cta_menu":           { "type": "text",     "label": "Menu CTA",           "default": "View Menu" },
+      "dish1_name":         { "type": "text",     "label": "Signature Dish 1",   "default": "Truffle Risotto" },
+      "dish1_desc":         { "type": "text",     "label": "Dish 1 Description", "default": "Arborio rice, black truffle, aged parmesan, fresh herbs" },
+      "dish1_price":        { "type": "text",     "label": "Dish 1 Price",       "default": "$32" },
+      "dish2_name":         { "type": "text",     "label": "Signature Dish 2",   "default": "Branzino al Forno" },
+      "dish2_desc":         { "type": "text",     "label": "Dish 2 Description", "default": "Whole roasted sea bass, lemon, capers, cherry tomatoes" },
+      "dish2_price":        { "type": "text",     "label": "Dish 2 Price",       "default": "$44" },
+      "dish3_name":         { "type": "text",     "label": "Signature Dish 3",   "default": "Tagliatelle al Ragù" },
+      "dish3_desc":         { "type": "text",     "label": "Dish 3 Description", "default": "Slow-braised short rib, hand-cut pasta, San Marzano tomato" },
+      "dish3_price":        { "type": "text",     "label": "Dish 3 Price",       "default": "$28" },
+      "story_heading":      { "type": "text",     "label": "Story Heading",      "default": "Our Philosophy" },
+      "story_text":         { "type": "textarea", "label": "Story Text",         "default": "We believe great food starts long before it reaches the kitchen. Our relationships with local farmers, fishermen, and artisan producers are the foundation of everything we do. Every ingredient is chosen with intention, every dish crafted with care." },
+      "chef_name":          { "type": "text",     "label": "Chef Name",          "default": "Chef Marco Bellini" },
+      "chef_bio":           { "type": "textarea", "label": "Chef Bio",           "default": "Trained in Bologna and refined over 15 years in New York, Marco brings an Italian soul and a New York edge to every plate." }
+    },
+    "menu": {
+      "title":              { "type": "text",     "label": "Page Title",         "default": "Menu — Osteria Bella" },
+      "menu_intro":         { "type": "textarea", "label": "Menu Introduction",  "default": "Our menu changes with the seasons. Everything below is available this week — we encourage you to ask your server about today's specials." },
+      "starter1_name":      { "type": "text",     "label": "Starter 1",          "default": "Burrata & Heirloom Tomato" },
+      "starter1_desc":      { "type": "text",     "label": "Starter 1 Desc",     "default": "Fresh burrata, roasted heirloom tomatoes, basil oil, fleur de sel" },
+      "starter1_price":     { "type": "text",     "label": "Starter 1 Price",    "default": "$18" },
+      "starter2_name":      { "type": "text",     "label": "Starter 2",          "default": "Beef Carpaccio" },
+      "starter2_desc":      { "type": "text",     "label": "Starter 2 Desc",     "default": "Hand-sliced wagyu, truffle aioli, micro arugula, shaved pecorino" },
+      "starter2_price":     { "type": "text",     "label": "Starter 2 Price",    "default": "$22" },
+      "main1_name":         { "type": "text",     "label": "Main 1",             "default": "Bistecca Fiorentina" },
+      "main1_desc":         { "type": "text",     "label": "Main 1 Desc",        "default": "28-day dry-aged T-bone, Tuscan herbs, lemon, rosemary potatoes (for two)" },
+      "main1_price":        { "type": "text",     "label": "Main 1 Price",       "default": "$95" },
+      "main2_name":         { "type": "text",     "label": "Main 2",             "default": "Branzino al Forno" },
+      "main2_desc":         { "type": "text",     "label": "Main 2 Desc",        "default": "Whole roasted sea bass, lemon, capers, cherry tomatoes, seasonal greens" },
+      "main2_price":        { "type": "text",     "label": "Main 2 Price",       "default": "$44" },
+      "dessert1_name":      { "type": "text",     "label": "Dessert 1",          "default": "Tiramisu della Casa" },
+      "dessert1_desc":      { "type": "text",     "label": "Dessert 1 Desc",     "default": "House-made tiramisu, espresso-soaked savoiardi, mascarpone, cocoa" },
+      "dessert1_price":     { "type": "text",     "label": "Dessert 1 Price",    "default": "$14" }
+    },
+    "contact": {
+      "title":              { "type": "text",     "label": "Page Title",         "default": "Contact & Reservations — Osteria Bella" },
+      "contact_heading":    { "type": "text",     "label": "Contact Heading",    "default": "Find Us" },
+      "contact_subheading": { "type": "text",     "label": "Contact Subheading", "default": "We'd love to have you. Walk-ins welcome, reservations recommended on weekends." },
+      "private_heading":    { "type": "text",     "label": "Private Events Heading", "default": "Private Events" },
+      "private_desc":       { "type": "textarea", "label": "Private Events Desc",    "default": "Host your next celebration, corporate dinner, or intimate gathering with us. Our private dining room seats up to 30 guests. Contact us to discuss a custom menu and experience." }
+    }
+  }
+}

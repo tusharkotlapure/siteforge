@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{seo_title}}</title>
+  <meta name="description" content="{{seo_description}}" />
+  <meta name="keywords" content="{{seo_keywords}}" />
+  <meta name="author" content="{{seo_author}}" />
+  <meta name="theme-color" content="{{theme_color}}" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Jost:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">{{logo_text}}</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="{{reservation_url}}" target="_blank" class="nav-reserve">Reserve</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-img-placeholder"></div>
+  <div class="hero-bg"></div>
+  <div class="container">
+    <div class="hero-content">
+      <span class="hero-eyebrow">{{hero_eyebrow}}</span>
+      <h1>{{hero_heading}}</h1>
+      <p>{{hero_subheading}}</p>
+      <div class="hero-actions">
+        <a href="{{reservation_url}}" target="_blank" class="btn btn-primary">{{cta_reserve}}</a>
+        <a href="menu.html" class="btn btn-outline-white">{{cta_menu}}</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section dishes-section">
+  <div class="container">
+    <div class="section-eyebrow">Signature Dishes</div>
+    <h2>From Our Kitchen</h2>
+    <div class="section-line"></div>
+    <div class="dishes-grid">
+      <div class="dish-card">
+        <div class="dish-price">{{dish1_price}}</div>
+        <h3 class="dish-name">{{dish1_name}}</h3>
+        <div class="dish-divider"></div>
+        <p class="dish-desc">{{dish1_desc}}</p>
+      </div>
+      <div class="dish-card">
+        <div class="dish-price">{{dish2_price}}</div>
+        <h3 class="dish-name">{{dish2_name}}</h3>
+        <div class="dish-divider"></div>
+        <p class="dish-desc">{{dish2_desc}}</p>
+      </div>
+      <div class="dish-card">
+        <div class="dish-price">{{dish3_price}}</div>
+        <h3 class="dish-name">{{dish3_name}}</h3>
+        <div class="dish-divider"></div>
+        <p class="dish-desc">{{dish3_desc}}</p>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:3rem;">
+      <a href="menu.html" class="btn btn-primary">View Full Menu</a>
+    </div>
+  </div>
+</section>
+
+<section class="section story-section">
+  <div class="container">
+    <div class="story-grid">
+      <div class="story-text">
+        <div class="section-eyebrow">{{story_heading}}</div>
+        <h2>More than a meal.</h2>
+        <div class="section-line"></div>
+        <p>{{story_text}}</p>
+        <div class="chef-block">
+          <div class="chef-name">{{chef_name}}</div>
+          <p class="chef-bio">{{chef_bio}}</p>
+        </div>
+      </div>
+      <div class="story-visual">
+        <div class="story-visual-inner">✦</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div>
+        <a href="index.html" class="footer-logo">{{logo_text}}</a>
+        <p class="footer-tagline">{{tagline}}</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="{{reservation_url}}" target="_blank">Reserve</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Visit</h4>
+        <ul>
+          <li><a href="tel:{{phone}}">{{phone}}</a></li>
+          <li><a href="mailto:{{primary_email}}">{{primary_email}}</a></li>
+          <li style="color:rgba(255,255,255,0.4);font-size:0.85rem;line-height:1.6;">{{address}}</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© {{current_year}} {{site_name}}. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/script.js"></script>
+</body>
+</html>

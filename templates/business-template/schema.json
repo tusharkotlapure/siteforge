@@ -1,0 +1,55 @@
+{
+  "meta": {
+    "name": "Business Pro",
+    "description": "A professional business website template with clean design",
+    "thumbnail": "https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&q=80",
+    "tags": ["business", "corporate", "professional"]
+  },
+  "global": {
+    "site_name": { "type": "text", "label": "Site Name", "default": "Acme Corp", "required": true },
+    "logo_text": { "type": "text", "label": "Logo Text", "default": "ACME" },
+    "primary_email": { "type": "email", "label": "Contact Email", "default": "hello@acmecorp.com" },
+    "phone": { "type": "text", "label": "Phone Number", "default": "+1 (555) 000-0000" },
+    "address": { "type": "text", "label": "Address", "default": "123 Business Ave, New York, NY 10001" },
+    "footer_tagline": { "type": "text", "label": "Footer Tagline", "default": "Building better businesses since 2010." }
+  },
+  "pages": {
+    "index": {
+      "title": { "type": "text", "label": "Page Title", "default": "Home | Acme Corp" },
+      "hero_title": { "type": "text", "label": "Hero Headline", "default": "We Build Solutions That Matter" },
+      "hero_subtitle": { "type": "text", "label": "Hero Subtitle", "default": "Empowering businesses with cutting-edge technology" },
+      "hero_description": { "type": "textarea", "label": "Hero Description", "default": "From strategy to execution, we partner with forward-thinking companies to deliver results that last." },
+      "cta_primary": { "type": "text", "label": "Primary CTA", "default": "Get Started" },
+      "cta_secondary": { "type": "text", "label": "Secondary CTA", "default": "Learn More" },
+      "service1_title": { "type": "text", "label": "Service 1 Title", "default": "Consulting" },
+      "service1_desc": { "type": "textarea", "label": "Service 1 Description", "default": "Strategic guidance to help you navigate complex challenges and seize new opportunities." },
+      "service2_title": { "type": "text", "label": "Service 2 Title", "default": "Development" },
+      "service2_desc": { "type": "textarea", "label": "Service 2 Description", "default": "Custom software solutions built with modern technology stacks for scalability." },
+      "service3_title": { "type": "text", "label": "Service 3 Title", "default": "Analytics" },
+      "service3_desc": { "type": "textarea", "label": "Service 3 Description", "default": "Data-driven insights that power smarter decisions across your organization." },
+      "stats_clients": { "type": "text", "label": "Clients Count", "default": "500+" },
+      "stats_projects": { "type": "text", "label": "Projects Done", "default": "1,200+" },
+      "stats_years": { "type": "text", "label": "Years Experience", "default": "14" }
+    },
+    "about": {
+      "title": { "type": "text", "label": "Page Title", "default": "About Us | Acme Corp" },
+      "page_heading": { "type": "text", "label": "Page Heading", "default": "Our Story" },
+      "mission_title": { "type": "text", "label": "Mission Title", "default": "Our Mission" },
+      "mission_text": { "type": "textarea", "label": "Mission Text", "default": "We exist to help businesses of all sizes unlock their full potential through smart technology and human-centered design." },
+      "vision_title": { "type": "text", "label": "Vision Title", "default": "Our Vision" },
+      "vision_text": { "type": "textarea", "label": "Vision Text", "default": "A world where every business, regardless of size, has access to enterprise-grade tools and expertise." },
+      "team_member1_name": { "type": "text", "label": "Team Member 1 Name", "default": "Sarah Chen" },
+      "team_member1_role": { "type": "text", "label": "Team Member 1 Role", "default": "CEO & Co-Founder" },
+      "team_member2_name": { "type": "text", "label": "Team Member 2 Name", "default": "Marcus Reid" },
+      "team_member2_role": { "type": "text", "label": "Team Member 2 Role", "default": "CTO & Co-Founder" },
+      "team_member3_name": { "type": "text", "label": "Team Member 3 Name", "default": "Priya Sharma" },
+      "team_member3_role": { "type": "text", "label": "Team Member 3 Role", "default": "Head of Design" }
+    },
+    "contact": {
+      "title": { "type": "text", "label": "Page Title", "default": "Contact Us | Acme Corp" },
+      "page_heading": { "type": "text", "label": "Page Heading", "default": "Get In Touch" },
+      "page_subheading": { "type": "text", "label": "Page Subheading", "default": "We'd love to hear from you. Let's start a conversation." },
+      "form_success_msg": { "type": "text", "label": "Form Success Message", "default": "Thanks! We'll be in touch within 24 hours." }
+    }
+  }
+}
